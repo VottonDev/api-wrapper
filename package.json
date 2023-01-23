@@ -26,6 +26,6 @@
   "devDependencies": {
     "jasmine": "^2.4.1",
     "prettier": "^2.8.3",
-    "rewire": "^2.5.1"
+    "rewire": "^6.0.0"
   }
 }
