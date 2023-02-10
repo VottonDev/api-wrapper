@@ -48,7 +48,14 @@ declare namespace create {
   export function parse(pathPattern: string): ParseResult;
   export function uriJoin(a: string, b: string): string;
   export function buildUri(root: string, args: any, parseResult: ParseResult): string;
-  export function buildWrapperFn(root: string, parseResult: ParseResult, method: string, requestModule: Request, requestOptions: RequestOptions, shouldParseJson: boolean): WrapperFn;
+  export function buildWrapperFn(
+    root: string,
+    parseResult: ParseResult,
+    method: string,
+    requestModule: Request,
+    requestOptions: RequestOptions,
+    shouldParseJson: boolean
+  ): WrapperFn;
   export function getParseJsonFn(cb: (error: any, message: any, body: any) => void): (error: any, message: any, body: string) => void;
   export function getMethodIterator(config: Config, cb: (method: string, key: string, value: string) => void): void;
 }
