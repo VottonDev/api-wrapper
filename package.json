@@ -7,6 +7,7 @@
     "test": "JASMINE_CONFIG_PATH=jasmine.json $(npm bin)/jasmine",
     "prettify": "prettier . --write"
   },
+  "types": "./@types/index.d.ts",
   "keywords": [
     "rest",
     "api",
@@ -24,6 +25,7 @@
     "request": "^2.69.0"
   },
   "devDependencies": {
+    "@types/node": "^18.13.0",
     "jasmine": "^4.5.0",
     "prettier": "^2.8.3",
     "rewire": "^6.0.0"
